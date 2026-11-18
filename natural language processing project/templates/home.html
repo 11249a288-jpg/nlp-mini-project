@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="hero">
+    <h1>Campus Issue Sentiment Analyzer</h1>
+
+    <p>
+        Understand student feedback using
+        Natural Language Processing.
+    </p>
+
+    <p>
+        Analyze campus facilities, identify problems
+        and understand student opinions.
+    </p>
+
+    <a class="btn" href="{{ url_for('signup') }}">Get Started</a>
+    <a class="btn" href="{{ url_for('login') }}">Login</a>
+</div>
+
+<br>
+
+<div class="grid">
+    <div class="stat">
+        <h2>01</h2>
+        <b>Text Processing</b>
+        <p>Tokenization and stop-word removal</p>
+    </div>
+
+    <div class="stat">
+        <h2>02</h2>
+        <b>Issue Identification</b>
+        <p>Classroom, bus, library and canteen</p>
+    </div>
+
+    <div class="stat">
+        <h2>03</h2>
+        <b>Sentiment Analysis</b>
+        <p>Positive, Negative and Neutral</p>
+    </div>
+</div>
+{% endblock %}
